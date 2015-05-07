@@ -1,0 +1,15 @@
+{
+  "title" : "List Modules",
+  "sections" : [ {
+    "viewMode" : "table",
+    "name" : "ListModules",
+    "model" : "ListModules",
+    "fields" : [ {
+      "name" : "ModuleName",
+      "selectModel" : "ListModules",
+      "selectSourceField" : "ModuleName"
+    }, {
+      "name" : "ModuleDatabase"
+    } ]
+  } ]
+}

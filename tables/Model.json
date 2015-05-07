@@ -1,0 +1,126 @@
+{
+  "dbName" : "model",
+  "primaryKey" : "ModelID",
+  "joins" : [ {
+    "name" : "Parent",
+    "table" : "Model",
+    "columns" : [ {
+      "to" : "ModelID",
+      "from" : "ParentID"
+    } ]
+  }, {
+    "name" : "BasisTable",
+    "required" : true,
+    "table" : "Table",
+    "columns" : [ {
+      "to" : "TableID",
+      "from" : "BasisTableID"
+    } ]
+  } ],
+  "columns" : [ {
+    "name" : "ModelID",
+    "updateable" : false,
+    "dbName" : "modelID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Name",
+    "dbName" : "name",
+    "label" : "Model Name",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "BasisTable",
+    "dbName" : "basisTable",
+    "label" : "Basis Table",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "BasisTableID",
+    "dbName" : "basisTableID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Module",
+    "dbName" : "module",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "ParentID",
+    "dbName" : "parentID",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "Extends",
+    "dbName" : "extends",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Limit",
+    "dbName" : "maxRows",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "ParentField",
+    "dbName" : "parentField",
+    "label" : "Parent Field",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "ChildField",
+    "dbName" : "childField",
+    "label" : "Child Field",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "PreSave",
+    "dbName" : "preSave",
+    "length" : 1000,
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Filter",
+    "dbName" : "filter",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "AllowInsert",
+    "dbName" : "allowInsert",
+    "label" : "Allow Insert",
+    "fieldType" : "checkbox",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "AllowUpdate",
+    "dbName" : "allowUpdate",
+    "label" : "Allow Update",
+    "fieldType" : "checkbox",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "AllowDelete",
+    "dbName" : "allowDelete",
+    "label" : "Allow Delete",
+    "fieldType" : "checkbox",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "CustomUrlSource",
+    "dbName" : "customUrlSource",
+    "label" : "URL Source",
+    "help" : "Identifies an alternative source URL for backend data",
+    "dataType" : "String",
+    "required" : false
+  } ],
+  "indexes" : [ {
+    "columns" : [ {
+      "name" : "ModelID"
+    } ]
+  }, {
+    "columns" : [ {
+      "name" : "Name"
+    }, {
+      "name" : "ParentID"
+    } ]
+  } ]
+}

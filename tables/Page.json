@@ -1,0 +1,37 @@
+{
+  "dbName" : "page",
+  "primaryKey" : "PageID",
+  "columns" : [ {
+    "name" : "PageID",
+    "updateable" : false,
+    "dbName" : "pageID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Name",
+    "dbName" : "name",
+    "label" : "Page Name",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "Module",
+    "dbName" : "module",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "Title",
+    "dbName" : "title",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "Icon",
+    "dbName" : "icon",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Css",
+    "dbName" : "css",
+    "dataType" : "String",
+    "required" : false
+  } ]
+}

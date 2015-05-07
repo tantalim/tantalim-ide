@@ -1,0 +1,14 @@
+{
+  "basisTable" : "ModelStep",
+  "allowDelete" : false,
+  "fields" : [ {
+    "name" : "ModelStepID",
+    "basisColumn" : "StepID"
+  }, {
+    "name" : "ModelStepName",
+    "basisColumn" : "Name"
+  }, {
+    "name" : "ModelStepModelID",
+    "basisColumn" : "ModelID"
+  } ]
+}

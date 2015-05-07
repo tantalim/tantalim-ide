@@ -1,0 +1,27 @@
+{
+  "dbName" : "menu",
+  "primaryKey" : "MenuID",
+  "columns" : [ {
+    "name" : "MenuID",
+    "updateable" : false,
+    "dbName" : "menuID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Name",
+    "dbName" : "name",
+    "label" : "Menu Name",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "Module",
+    "dbName" : "module",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "Title",
+    "dbName" : "title",
+    "dataType" : "String",
+    "required" : true
+  } ]
+}

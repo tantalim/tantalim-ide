@@ -1,0 +1,29 @@
+{
+  "filter" : "ModelParentID IsEmpty",
+  "basisTable" : "Model",
+  "allowDelete" : false,
+  "fields" : [ {
+    "name" : "ModelID",
+    "basisColumn" : "ModelID"
+  }, {
+    "name" : "ModelName",
+    "basisColumn" : "Name"
+  }, {
+    "name" : "ModelParentID",
+    "basisColumn" : "ParentID"
+  }, {
+    "name" : "ModelModule",
+    "basisColumn" : "Module"
+  } ],
+  "orderBy" : [ {
+    "fieldName" : "ModelName"
+  } ],
+  "steps" : [ {
+    "name" : "BasisTable",
+    "join" : "BasisTable",
+    "fields" : [ {
+      "name" : "ModelBasisTable",
+      "basisColumn" : "Name"
+    } ]
+  } ]
+}

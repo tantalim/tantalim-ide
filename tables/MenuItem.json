@@ -1,0 +1,42 @@
+{
+  "dbName" : "menu_item",
+  "primaryKey" : "ItemID",
+  "columns" : [ {
+    "name" : "ItemID",
+    "updateable" : false,
+    "dbName" : "itemID",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "ContentID",
+    "dbName" : "contentID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "DisplayOrder",
+    "dbName" : "displayOrder",
+    "label" : "Order",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "Page",
+    "dbName" : "page",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Title",
+    "dbName" : "title",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Link",
+    "dbName" : "href",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Icon",
+    "dbName" : "icon",
+    "dataType" : "String",
+    "required" : false
+  } ]
+}

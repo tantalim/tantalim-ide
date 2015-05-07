@@ -1,0 +1,116 @@
+{
+  "dbName" : "model_field",
+  "primaryKey" : "FieldID",
+  "joins" : [ {
+    "name" : "Model",
+    "required" : true,
+    "table" : "Model",
+    "columns" : [ {
+      "to" : "ModelID",
+      "from" : "ModelID"
+    } ]
+  }, {
+    "name" : "Step",
+    "table" : "ModelStep",
+    "columns" : [ {
+      "to" : "StepID",
+      "from" : "StepID"
+    } ]
+  }, {
+    "name" : "Column",
+    "required" : false,
+    "table" : "Column",
+    "columns" : [ {
+      "to" : "ColumnID",
+      "from" : "BasisColumnID"
+    } ]
+  } ],
+  "columns" : [ {
+    "name" : "FieldID",
+    "updateable" : false,
+    "dbName" : "fieldID",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "ModelID",
+    "dbName" : "modelID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Name",
+    "dbName" : "name",
+    "label" : "Field",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "BasisColumnID",
+    "dbName" : "basisColumnID",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "StepID",
+    "dbName" : "stepID",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "Updateable",
+    "dbName" : "updateable",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "Required",
+    "dbName" : "required",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "Export",
+    "dbName" : "export",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "AlwaysDefault",
+    "dbName" : "alwaysDefault",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "FieldDefault",
+    "dbName" : "fieldDefault",
+    "label" : "Field Default",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "ValueDefault",
+    "dbName" : "valueDefault",
+    "label" : "Value Default",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "FunctionDefault",
+    "dbName" : "functionDefault",
+    "label" : "Function Default",
+    "length" : 1000,
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "BasisTable",
+    "dbName" : "basisTable",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "BasisColumn",
+    "dbName" : "basisColumn",
+    "dataType" : "String",
+    "required" : false
+  } ],
+  "indexes" : [ {
+    "columns" : [ {
+      "name" : "FieldID"
+    } ]
+  }, {
+    "columns" : [ {
+      "name" : "Name"
+    }, {
+      "name" : "ModelID"
+    } ]
+  } ]
+}

@@ -1,0 +1,71 @@
+{
+  "dbName" : "model_step",
+  "primaryKey" : "StepID",
+  "joins" : [ {
+    "name" : "Parent",
+    "table" : "ModelStep",
+    "columns" : [ {
+      "to" : "StepID",
+      "from" : "ParentID"
+    } ]
+  }, {
+    "name" : "Model",
+    "table" : "Model",
+    "columns" : [ {
+      "to" : "ModelID",
+      "from" : "ModelID"
+    } ]
+  }, {
+    "name" : "Join",
+    "required" : true,
+    "table" : "Join",
+    "columns" : [ {
+      "to" : "JoinID",
+      "from" : "JoinID"
+    } ]
+  } ],
+  "columns" : [ {
+    "name" : "StepID",
+    "updateable" : false,
+    "dbName" : "stepID",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "ModelID",
+    "dbName" : "modelID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Name",
+    "dbName" : "name",
+    "label" : "Step",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "Join",
+    "dbName" : "joinName",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "ParentID",
+    "dbName" : "parentID",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "JoinID",
+    "dbName" : "joinID",
+    "dataType" : "Integer",
+    "required" : true
+  } ],
+  "indexes" : [ {
+    "columns" : [ {
+      "name" : "StepID"
+    } ]
+  }, {
+    "columns" : [ {
+      "name" : "Name"
+    }, {
+      "name" : "ModelID"
+    } ]
+  } ]
+}

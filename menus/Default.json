@@ -1,0 +1,75 @@
+{
+  "appTitle": "Tantalim IDE",
+  "content": [
+    {
+      "title": "Tables",
+      "items": [
+        {
+          "title": "List",
+          "page": "ListTables"
+        },
+        {
+          "title": "Build",
+          "page": "BuildTable"
+        },
+        {
+          "page": "DataTypeEnum"
+        },
+        {
+          "title": "Report",
+          "page": "TableReport"
+        }
+      ]
+    },
+    {
+      "title": "Models",
+      "items": [
+        {
+          "title": "List",
+          "page": "ListModels"
+        },
+        {
+          "title": "Build",
+          "page": "BuildModel"
+        },
+        {
+          "page": "FieldTypeEnum"
+        },
+        {
+          "page": "ModelFieldsEditor"
+        }
+      ]
+    },
+    {
+      "title": "Pages",
+      "items": [
+        {
+          "page": "ListPages"
+        },
+        {
+          "page": "BuildPage"
+        },
+        {
+          "page": "BuildSection"
+        },
+        {
+          "page": "PageFieldsEditor"
+        },
+        {
+          "page": "ViewModeEnum"
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "items": [
+        {
+          "page": "BuildMenu"
+        },
+        {
+          "page": "ModuleManagement"
+        }
+      ]
+    }
+  ]
+}

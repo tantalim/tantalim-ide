@@ -1,0 +1,145 @@
+{
+  "dbName" : "page_field",
+  "primaryKey" : "FieldID",
+  "joins" : [ {
+    "name" : "Section",
+    "required" : true,
+    "table" : "Section",
+    "columns" : [ {
+      "to" : "SectionID",
+      "from" : "SectionID"
+    } ]
+  }, {
+    "name" : "SelectTarget",
+    "required" : true,
+    "table" : "PageField",
+    "columns" : [ {
+      "to" : "FieldID",
+      "from" : "SelectTargetID"
+    } ]
+  } ],
+  "columns" : [ {
+    "name" : "FieldID",
+    "updateable" : false,
+    "dbName" : "fieldID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "SectionID",
+    "dbName" : "sectionID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Name",
+    "dbName" : "name",
+    "label" : "Field",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "DisplayOrder",
+    "dbName" : "displayOrder",
+    "label" : "Order",
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "ShowInFormView",
+    "dbName" : "showInFormView",
+    "label" : "In Form",
+    "fieldType" : "checkbox",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "ShowInTableView",
+    "dbName" : "showInTableView",
+    "label" : "In Table",
+    "fieldType" : "checkbox",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "ShowInNavigation",
+    "dbName" : "showInNavigation",
+    "label" : "In Navigation",
+    "fieldType" : "checkbox",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "Label",
+    "dbName" : "label",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "FieldType",
+    "dbName" : "fieldType",
+    "label" : "Field Type",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Help",
+    "dbName" : "help",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Placeholder",
+    "dbName" : "placeholder",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Filter",
+    "dbName" : "filter",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "BlurFunction",
+    "dbName" : "blurFunction",
+    "label" : "Blur Function",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Disabled",
+    "dbName" : "disabled",
+    "fieldType" : "checkbox",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "Searchable",
+    "dbName" : "searchable",
+    "fieldType" : "checkbox",
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "SelectModel",
+    "dbName" : "selectModel",
+    "label" : "Select - Model",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "SelectSourceField",
+    "dbName" : "selectSourceField",
+    "label" : "Select - Source Field",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "SelectTargetID",
+    "dbName" : "selectTargetID",
+    "label" : "Select - Target ID",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "SelectFilter",
+    "dbName" : "selectFilter",
+    "label" : "Select - Filter",
+    "dataType" : "String",
+    "required" : false
+  } ],
+  "indexes" : [ {
+    "columns" : [ {
+      "name" : "FieldID"
+    } ]
+  }, {
+    "columns" : [ {
+      "name" : "Name"
+    }, {
+      "name" : "SectionID"
+    } ]
+  } ]
+}

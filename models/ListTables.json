@@ -1,0 +1,30 @@
+{
+  "basisTable" : "Table",
+  "allowDelete" : false,
+  "limit" : 100,
+  "fields" : [ {
+    "name" : "TableTableID",
+    "basisColumn" : "TableID"
+  }, {
+    "name" : "TableName",
+    "basisColumn" : "Name"
+  }, {
+    "name" : "TableSQL",
+    "basisColumn" : "SQL"
+  }, {
+    "name" : "TableModule",
+    "basisColumn" : "Module"
+  }, {
+    "name" : "TableAllowInsert",
+    "basisColumn" : "AllowInsert"
+  }, {
+    "name" : "TableAllowUpdate",
+    "basisColumn" : "AllowUpdate"
+  }, {
+    "name" : "TableAllowDelete",
+    "basisColumn" : "AllowDelete"
+  } ],
+  "orderBy" : [ {
+    "fieldName" : "TableName"
+  } ]
+}

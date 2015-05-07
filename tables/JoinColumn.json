@@ -1,0 +1,41 @@
+{
+  "dbName" : "table_join_column",
+  "primaryKey" : "JoinColumnID",
+  "joins" : [ {
+    "name" : "Join",
+    "table" : "Join",
+    "columns" : [ {
+      "to" : "JoinID",
+      "from" : "JoinID"
+    } ]
+  } ],
+  "columns" : [ {
+    "name" : "JoinColumnID",
+    "updateable" : false,
+    "dbName" : "joinColumnID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "JoinID",
+    "updateable" : false,
+    "dbName" : "joinID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "FromColumn",
+    "dbName" : "fromColumn",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "FromText",
+    "dbName" : "fromText",
+    "label" : "From Text",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "ToColumn",
+    "dbName" : "toColumn",
+    "dataType" : "String",
+    "required" : true
+  } ]
+}

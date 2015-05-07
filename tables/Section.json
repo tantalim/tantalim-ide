@@ -1,0 +1,59 @@
+{
+  "dbName" : "page_section",
+  "primaryKey" : "SectionID",
+  "joins" : [ {
+    "name" : "Page",
+    "required" : false,
+    "table" : "Page",
+    "columns" : [ {
+      "to" : "PageID",
+      "from" : "PageID"
+    } ]
+  }, {
+    "name" : "Parent",
+    "table" : "Section",
+    "columns" : [ {
+      "to" : "SectionID",
+      "from" : "ParentID"
+    } ]
+  } ],
+  "columns" : [ {
+    "name" : "SectionID",
+    "updateable" : false,
+    "dbName" : "sectionID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Name",
+    "dbName" : "name",
+    "label" : "Section Name",
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "PageID",
+    "updateable" : false,
+    "dbName" : "pageID",
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Title",
+    "dbName" : "title",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "Model",
+    "dbName" : "model",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "ViewMode",
+    "dbName" : "viewMode",
+    "dataType" : "String",
+    "required" : false
+  }, {
+    "name" : "ParentID",
+    "dbName" : "parentID",
+    "dataType" : "Integer",
+    "required" : false
+  } ]
+}
