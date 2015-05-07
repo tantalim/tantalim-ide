@@ -37,19 +37,13 @@
     "dbName" : "basisTable",
     "label" : "Basis Table",
     "dataType" : "String",
-    "required" : true
+    "required" : false
   }, {
     "name" : "BasisTableID",
     "visible" : false,
     "dbName" : "basisTableID",
     "dataType" : "Integer",
     "required" : true
-  }, {
-    "name" : "Module",
-    "visible" : true,
-    "dbName" : "module",
-    "dataType" : "String",
-    "required" : false
   }, {
     "name" : "ParentID",
     "visible" : false,

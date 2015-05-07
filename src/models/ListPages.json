@@ -8,9 +8,6 @@
     "name" : "PageName",
     "basisColumn" : "Name"
   }, {
-    "name" : "PageModule",
-    "basisColumn" : "Module"
-  }, {
     "name" : "PageTitle",
     "basisColumn" : "Title"
   } ],

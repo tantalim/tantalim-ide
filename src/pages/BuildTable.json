@@ -18,10 +18,6 @@
     }, {
       "name" : "TableSQL"
     }, {
-      "name" : "TableModule",
-      "selectModel" : "ListModules",
-      "selectSourceField" : "ModuleName"
-    }, {
       "name" : "TablePrimaryKey",
       "selectModel" : "ListTableColumns",
       "selectFilter" : "ColumnTableID = ${TableTableID}",
@@ -157,10 +153,10 @@
     } ],
     "buttons" : [ {
       "label" : "Export",
-      "fxn" : "var row = section.getCurrentSet().getInstance();\nvar table = row.getValue('TableName');\nvar moduleName = row.getValue('TableModule');\n$http.post('/export/' + moduleName + '/tables/' + table).success(function(data) { alert(data.message) });"
+      "fxn" : "var row = section.getCurrentSet().getInstance();\nvar table = row.getValue('TableName');\n$http.post('/export/tables/' + table).success(function(data) { alert(data.message) });"
     }, {
       "label" : "Create Table",
-      "fxn" : "var row = section.getCurrentSet().getInstance();\nvar table = row.getValue('TableName');\nvar moduleName = row.getValue('TableModule');\n$http.post('/export/' + moduleName + '/tables/' + table).success(function(data) {\n  console.info(data.message);\n  $http.post('/ddl/' + table).success(function(data) { console.info(data.message) });\n});"
+      "fxn" : "var row = section.getCurrentSet().getInstance();\nvar table = row.getValue('TableName');\n$http.post('/export/tables/' + table).success(function(data) {\n  console.info(data.message);\n  $http.post('/ddl/' + table).success(function(data) { console.info(data.message) });\n});"
     } ]
   } ]
 }

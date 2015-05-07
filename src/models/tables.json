@@ -197,10 +197,6 @@
     "basisColumn" : "Name",
     "export" : false
   }, {
-    "name" : "module",
-    "basisColumn" : "Module",
-    "export" : false
-  }, {
     "name" : "dbName",
     "basisColumn" : "SQL",
     "export" : true

@@ -63,8 +63,5 @@
   }, {
     "name" : "MenuTitle",
     "basisColumn" : "Title"
-  }, {
-    "name" : "MenuModule",
-    "basisColumn" : "Module"
   } ]
 }

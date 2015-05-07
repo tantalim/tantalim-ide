@@ -12,10 +12,6 @@
       } ]
     }, {
       "name" : "PageTitle"
-    }, {
-      "name" : "PageModule",
-      "selectModel" : "ListModules",
-      "selectSourceField" : "ModuleName"
     } ]
   } ]
 }

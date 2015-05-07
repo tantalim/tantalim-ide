@@ -12,9 +12,6 @@
     "name" : "TableSQL",
     "basisColumn" : "SQL"
   }, {
-    "name" : "TableModule",
-    "basisColumn" : "Module"
-  }, {
     "name" : "TableAllowInsert",
     "basisColumn" : "AllowInsert"
   }, {

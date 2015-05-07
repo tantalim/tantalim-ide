@@ -11,9 +11,6 @@
   }, {
     "name" : "ModelParentID",
     "basisColumn" : "ParentID"
-  }, {
-    "name" : "ModelModule",
-    "basisColumn" : "Module"
   } ],
   "orderBy" : [ {
     "fieldName" : "ModelName"

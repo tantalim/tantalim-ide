@@ -38,9 +38,6 @@
     "name" : "PageTitle",
     "basisColumn" : "Title"
   }, {
-    "name" : "PageModule",
-    "basisColumn" : "Module"
-  }, {
     "name" : "PageIcon",
     "basisColumn" : "Icon"
   }, {

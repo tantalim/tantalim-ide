@@ -75,10 +75,6 @@
     "basisColumn" : "MenuID",
     "export" : false
   }, {
-    "name" : "module",
-    "basisColumn" : "Module",
-    "export" : false
-  }, {
     "name" : "name",
     "basisColumn" : "Name",
     "export" : false

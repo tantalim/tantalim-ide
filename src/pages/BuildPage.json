@@ -9,10 +9,6 @@
     }, {
       "name" : "PageTitle"
     }, {
-      "name" : "PageModule",
-      "selectModel" : "ListModules",
-      "selectSourceField" : "ModuleName"
-    }, {
       "name" : "PageIcon"
     }, {
       "name" : "PageCss"
@@ -45,7 +41,7 @@
     } ],
     "buttons" : [ {
       "label" : "Export",
-      "fxn" : "var row = section.getCurrentSet().getInstance();\nvar page = row.getValue('PageName');\nvar moduleName = row.getValue('PageModule');\n$http.post('/export/' + moduleName + '/pages/' + page).success(function(data) { console.info(data.message) });"
+      "fxn" : "var row = section.getCurrentSet().getInstance();\nvar page = row.getValue('PageName');\n$scope.Logger.info('Exporting...');\n$http.post('/export/' + '/pages/' + page).success(function(data) { $scope.Logger.info(data.message) });"
     }, {
       "label" : "Test",
       "fxn" : "var row = section.getCurrentSet().getInstance();\nvar page = row.getValue('PageName');\nvar url = \"/page/\" + page + '/';\nwindow.open(url);"

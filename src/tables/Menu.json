@@ -16,12 +16,6 @@
     "dataType" : "String",
     "required" : true
   }, {
-    "name" : "Module",
-    "visible" : true,
-    "dbName" : "module",
-    "dataType" : "String",
-    "required" : true
-  }, {
     "name" : "Title",
     "visible" : true,
     "dbName" : "title",

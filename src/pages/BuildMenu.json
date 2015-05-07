@@ -10,10 +10,6 @@
       "showInNavigation" : true
     }, {
       "name" : "MenuTitle"
-    }, {
-      "name" : "MenuModule",
-      "selectModel" : "ListModules",
-      "selectSourceField" : "ModuleName"
     } ],
     "sections" : [ {
       "name" : "MenuContent",
@@ -51,7 +47,7 @@
     } ],
     "buttons" : [ {
       "label" : "Export",
-      "fxn" : "var row = section.getCurrentSet().getInstance();\nvar menu = row.getValue('MenuName');\nvar moduleName = row.getValue('MenuModule');\n$http.post('/export/' + moduleName + '/menus/' + menu).success(function(data) { console.info(data.message) });"
+      "fxn" : "var row = section.getCurrentSet().getInstance();\nvar menu = row.getValue('MenuName');\nLogger.info('Exporting...');\n\n$http.post('/export/menus/' + menu).success(function(data) { Logger.info(data.message) });"
     } ]
   } ]
 }

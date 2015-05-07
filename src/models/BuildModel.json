@@ -148,11 +148,6 @@
       "name" : "ChildModelChildField",
       "basisColumn" : "ChildField"
     }, {
-      "name" : "ChildModelModule",
-      "basisColumn" : "Module",
-      "fieldDefault" : "ModelModule",
-      "alwaysDefault" : true
-    }, {
       "name" : "ChildModelBasisTableID",
       "basisColumn" : "BasisTableID"
     }, {
@@ -214,9 +209,6 @@
   }, {
     "name" : "ModelParentID",
     "basisColumn" : "ParentID"
-  }, {
-    "name" : "ModelModule",
-    "basisColumn" : "Module"
   }, {
     "name" : "ModelLimit",
     "basisColumn" : "Limit"
