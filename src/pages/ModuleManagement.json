@@ -9,9 +9,7 @@
     "fields" : [ {
       "name" : "ModuleName",
       "showInFormView" : false,
-      "label" : "Module Name",
-      "selectModel" : "ListModules",
-      "selectSourceField" : "ModuleName"
+      "label" : "Module Name"
     } ],
     "sections" : [ {
       "viewMode" : "table",

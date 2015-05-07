@@ -37,10 +37,12 @@
     "required" : true
   } ],
   "indexes" : [ {
+    "unique": true,
     "columns" : [ {
       "name" : "ButtonID"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "SectionID"
     }, {

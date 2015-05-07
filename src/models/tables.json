@@ -183,6 +183,9 @@
       "name" : "priority",
       "basisColumn" : "Priority",
       "export" : false
+    }, {
+      "name" : "unique",
+      "basisColumn" : "Unique"
     } ],
     "orderBy" : [ {
       "fieldName" : "priority"
