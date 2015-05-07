@@ -1,0 +1,31 @@
+{
+  "title" : "Manage Employees",
+  "sections" : [ {
+    "viewMode" : "table",
+    "name" : "Employees",
+    "model" : "ManageEmployees",
+    "title" : "Employees",
+    "fields" : [ {
+      "name" : "ManageEmployeesName",
+      "label" : "Employee Name"
+    }, {
+      "name" : "ManageEmployeesActive"
+    }, {
+      "name" : "ManageEmployeesAge"
+    }, {
+      "name" : "ManageEmployeesManagerName",
+      "label" : "Manager"
+    } ],
+    "sections" : [ {
+      "viewMode" : "form",
+      "name" : "Subordinates",
+      "model" : "Subordinates",
+      "title" : "Subordinates",
+      "fields" : [ {
+        "name" : "SubordinatesName"
+      }, {
+        "name" : "SubordinatesAge"
+      } ]
+    } ]
+  } ]
+}

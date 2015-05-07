@@ -1,0 +1,51 @@
+{
+  "allowUpdate" : true,
+  "dbName" : "employee",
+  "primaryKey" : "EmployeeID",
+  "allowInsert" : true,
+  "allowDelete" : true,
+  "joins" : [ {
+    "name" : "Manager",
+    "required" : false,
+    "table" : "Employee",
+    "columns" : [ {
+      "to" : "EmployeeID",
+      "from" : "ManagerID"
+    } ]
+  } ],
+  "columns" : [ {
+    "name" : "EmployeeID",
+    "visible" : false,
+    "dataType" : "Integer",
+    "required" : true
+  }, {
+    "name" : "Name",
+    "visible" : true,
+    "dataType" : "String",
+    "required" : true
+  }, {
+    "name" : "Age",
+    "visible" : true,
+    "dataType" : "Integer",
+    "required" : false
+  }, {
+    "name" : "Active",
+    "visible" : true,
+    "dataType" : "Boolean",
+    "required" : false
+  }, {
+    "name" : "ManagerID",
+    "visible" : false,
+    "dataType" : "Integer",
+    "required" : false
+  } ],
+  "indexes" : [ {
+    "columns" : [ {
+      "name" : "EmployeeID"
+    } ]
+  }, {
+    "columns" : [ {
+      "name" : "Name"
+    } ]
+  } ]
+}
