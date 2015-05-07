@@ -35,16 +35,19 @@
     "required" : true
   } ],
   "indexes" : [ {
+    "unique": true,
     "columns" : [ {
       "name" : "ID"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "Code"
     }, {
       "name" : "Type"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "Meaning"
     }, {

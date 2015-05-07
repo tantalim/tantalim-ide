@@ -64,10 +64,12 @@
     "required" : true
   } ],
   "indexes" : [ {
+    "unique": true,
     "columns" : [ {
       "name" : "StepID"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "Name"
     }, {

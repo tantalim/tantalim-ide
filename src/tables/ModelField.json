@@ -105,10 +105,12 @@
     "required" : false
   } ],
   "indexes" : [ {
+    "unique": true,
     "columns" : [ {
       "name" : "FieldID"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "Name"
     }, {

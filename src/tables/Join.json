@@ -59,10 +59,12 @@
     "required" : false
   } ],
   "indexes" : [ {
+    "unique": true,
     "columns" : [ {
       "name" : "JoinID"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "Name"
     }, {

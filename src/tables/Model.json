@@ -124,10 +124,12 @@
     "required" : false
   } ],
   "indexes" : [ {
+    "unique": true,
     "columns" : [ {
       "name" : "ModelID"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "Name"
     }, {

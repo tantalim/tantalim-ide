@@ -44,10 +44,12 @@
     "required" : false
   } ],
   "indexes" : [ {
+    "unique": true,
     "columns" : [ {
       "name" : "LinkID"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "FieldID"
     }, {

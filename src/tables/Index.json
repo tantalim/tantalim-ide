@@ -40,10 +40,12 @@
     "required" : false
   } ],
   "indexes" : [ {
+    "unique": true,
     "columns" : [ {
       "name" : "IndexID"
     } ]
   }, {
+    "unique": true,
     "columns" : [ {
       "name" : "TableID"
     }, {
